@@ -13,13 +13,11 @@
 
 <body>
   <div class="container">
+    <div class="langWrap">
+      <a href="#" language='english' class="active"><img class="flag" src="gb.svg"></img></a>
+      <a href="#" language='polish'><img class="flag" src="pl.svg"></img></a>
+    </div>
     <div class="left_explorer">
-
-      <div class="langWrap">
-        <a href="#" language='english' class="active">EN</a>
-        <a href="#" language='polish'>PL</a>
-      </div>
-
       <div class="profileText">
         <div class="imgBx">
           <img class="profileImg" src="1.png">
@@ -236,35 +234,35 @@
 
       const attr = el.getAttribute('language');
 
-      titleContactEl.textContent = data[attr].titleContact;
-      titleEducationEl.textContent = data[attr].titleEducation;
-      titleLanguageEl.textContent = data[attr].titleLanguage;
-      yearEducationEl.textContent = data[attr].yearEducation;
-      degreeEducationEl.textContent = data[attr].degreeEducation;
-      organizationEducationEl.textContent = data[attr].organizationEducation;
-      textPolishEl.textContent = data[attr].textPolish;
-      textEnglishEl.textContent = data[attr].textEnglish;
-      textGermanEl.textContent = data[attr].textGerman;
-      titleAboutMeEl.textContent = data[attr].titleAboutMe;
-      titlePersonalEl.textContent = data[attr].titlePersonal;
-      titleSkillsEl.textContent = data[attr].titleSkills;
-      titleWorkEl.textContent = data[attr].titleWork;
-      AboutMeEl.textContent = data[attr].AboutMe;
-      responsibility1El.textContent = data[attr].responsibility1;
-      responsibility2El.textContent = data[attr].responsibility2;
-      responsibility3El.textContent = data[attr].responsibility3;
-      responsibility4El.textContent = data[attr].responsibility4;
-      responsibility5El.textContent = data[attr].responsibility5;
-      responsibility6El.textContent = data[attr].responsibility6;
-      responsibility7El.textContent = data[attr].responsibility7;
-      INTERNPMEl.textContent = data[attr].INTERNPM;
-      OWNBUISNESSEl.textContent = data[attr].OWNBUISNESS;
-      telekomEl.textContent = data[attr].telekom;
-      refereeEl.textContent = data[attr].referee;
-      stockEl.textContent = data[attr].stock;
-      dubbingEl.textContent = data[attr].dubbing;
-      graphicEl.textContent = data[attr].graphic;
-      gamesEl.textContent = data[attr].games;
+      titleContactEl.innerHTML = data[attr].titleContact;
+      titleEducationEl.innerHTML = data[attr].titleEducation;
+      titleLanguageEl.innerHTML = data[attr].titleLanguage;
+      yearEducationEl.innerHTML = data[attr].yearEducation;
+      degreeEducationEl.innerHTML = data[attr].degreeEducation;
+      organizationEducationEl.innerHTML = data[attr].organizationEducation;
+      textPolishEl.innerHTML = data[attr].textPolish;
+      textEnglishEl.innerHTML = data[attr].textEnglish;
+      textGermanEl.innerHTML = data[attr].textGerman;
+      titleAboutMeEl.innerHTML = data[attr].titleAboutMe;
+      titlePersonalEl.innerHTML = data[attr].titlePersonal;
+      titleSkillsEl.innerHTML = data[attr].titleSkills;
+      titleWorkEl.innerHTML = data[attr].titleWork;
+      AboutMeEl.innerHTML = data[attr].AboutMe;
+      responsibility1El.innerHTML = data[attr].responsibility1;
+      responsibility2El.innerHTML = data[attr].responsibility2;
+      responsibility3El.innerHTML = data[attr].responsibility3;
+      responsibility4El.innerHTML = data[attr].responsibility4;
+      responsibility5El.innerHTML = data[attr].responsibility5;
+      responsibility6El.innerHTML = data[attr].responsibility6;
+      responsibility7El.innerHTML = data[attr].responsibility7;
+      INTERNPMEl.innerHTML = data[attr].INTERNPM;
+      OWNBUISNESSEl.innerHTML = data[attr].OWNBUISNESS;
+      telekomEl.innerHTML = data[attr].telekom;
+      refereeEl.innerHTML = data[attr].referee;
+      stockEl.innerHTML = data[attr].stock;
+      dubbingEl.innerHTML = data[attr].dubbing;
+      graphicEl.innerHTML = data[attr].graphic;
+      gamesEl.innerHTML = data[attr].games;
     });
   });
   
@@ -294,12 +292,12 @@
         "responsibility7": "Editing films and creating advertising graphics",
         "INTERNPM": "INTERN PRODUCT MANAGER",
         "OWNBUISNESS": "OWN BUSINESS",
-        "telekom": "Telecommunication",
-        "referee": "Refereeing Football",
-        "stock": "Stock Market",
-        "dubbing": "Dubbing",
-        "graphic": "Graphic Design",
-        "games": "Games",
+        "telekom": '<i class="fa fa-mobile" aria-hidden="true"></i> Telecommunication',
+        "referee": '<i class="fa fa-futbol-o" aria-hidden="true"></i> Refereeing Football',
+        "stock": '<i class="fa fa-money" aria-hidden="true"></i> Stock Market',
+        "dubbing": '<i class="fa fa-microphone" aria-hidden="true"></i> Dubbing',
+        "graphic": '<i class="fa fa-paint-brush" aria-hidden="true"></i> Graphic Design',
+        "games": '<i class="fa fa-gamepad" aria-hidden="true"></i> Games',
       },
       "polish": 
       {
@@ -318,7 +316,7 @@
         "titleWork":"Doświadczenie",
         "AboutMe":"Jestem studentem 4 roku Politechniki Wrocławskiej na Wydziale Informatyki i Telekomunikacji. Poza pracą i studiami interesuje mnie rozwój nowych technologii oraz rynek finansowy. Gram na giełdzie od ponad 6 lat. Moje hobby to dubbing i grafika komputerowa.",
         "responsibility1": "Obsługa systemu CRM/ERP z roli użytkowanika - Odoo",
-        "responsibility2": "Automatyzacja systemów produktowych oraz analitycznyc - Excel",
+        "responsibility2": "Automatyzacja systemów produktowych oraz analitycznych - Excel",
         "responsibility3": "Tworzenie analiz finansowych dla produktów",
         "responsibility4": "Prowadzenie relacji z producentami",
         "responsibility5": "Sprzedaż kursów, szkoleń i imprez na dużą skalę",
@@ -326,12 +324,12 @@
         "responsibility7": "Montaż filmów i tworzenie grafiki reklamowej",
         "INTERNPM": "Staż Product Manager",
         "OWNBUISNESS": "Własna działalność",
-        "telekom": "Telekomunikacja",
-        "referee": "Sędziowanie piłki nożnej",
-        "stock": "Giełda",
-        "dubbing": "Dubbing",
-        "graphic": "Grafika komputerowa",
-        "games": "Gry",
+        "telekom": '<i class="fa fa-mobile" aria-hidden="true"></i> Telekomunikacja',
+        "referee": '<i class="fa fa-futbol-o" aria-hidden="true"></i> Sędziowanie piłki nożnej',
+        "stock": '<i class="fa fa-money" aria-hidden="true"></i> Giełda',
+        "dubbing": '<i class="fa fa-microphone" aria-hidden="true"></i> Dubbing',
+        "graphic": '<i class="fa fa-paint-brush" aria-hidden="true"></i> Grafika komputerowa',
+        "games": '<i class="fa fa-gamepad" aria-hidden="true"></i> Gry',
       }
     }
 </script>
