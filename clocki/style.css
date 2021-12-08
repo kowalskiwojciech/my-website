@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: "coolveticacompressed", sans-serif;
   margin: 0;
   padding: 0;
+  -webkit-font-smoothing: antialiased;
 }
 body {
   display: flex;
@@ -15,16 +17,16 @@ body {
   position: relative;
   width: 900px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .container .card {
   position: relative;
-  width: 250px;
-  background: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b);
+  width: 220px;
   justify-content: center;
   align-items: center;
   display: flex;
-  height: 300px;
+  height: 220px;
   border-radius: 4px;
   text-align: center;
   overflow: hidden;
@@ -128,13 +130,25 @@ svg circle:nth-child(2) {
 }
 .card:nth-child(1) svg circle:nth-child(2) {
   stroke-dashoffset: calc(440 - (440 * 90) / 100);
-  stroke: #00ff43;
+  stroke: #3c92cc;
 }
 .card:nth-child(2) svg circle:nth-child(2) {
   stroke-dashoffset: calc(440 - (440 * 50) / 100);
-  stroke: #00a1ff;
+  stroke: #3c92cc;
 }
 .card:nth-child(3) svg circle:nth-child(2) {
   stroke-dashoffset: calc(440 - (440 * 25) / 100);
-  stroke: #ff04f7;
+  stroke: #3c92cc;
+}
+.card:nth-child(4) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 25) / 100);
+  stroke: #3c92cc;
+}
+.card:nth-child(5) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 25) / 100);
+  stroke: #3c92cc;
+}
+.card:nth-child(6) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 25) / 100);
+  stroke: #3c92cc;
 }
