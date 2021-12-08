@@ -20,10 +20,11 @@
     <div class="left_explorer">
       <div class="profileText">
         <div class="imgBx">
-          <img class="profileImg" src="1.png">
+          <img class="profileImg" src="1.jpg">
         </div>
-        <h2>WOJCIECH </h2>
+        <h2>WOJCIECH KOWALSKI</h2>
         <span>Intern PM</span>
+        <a href="https://drive.google.com/file/d/160qrKsWFJ6rtnLTxMik-rDH9jRfa82gD/view?usp=sharing" target="_blank" span class="download"><i class="fa fa-download" aria-hidden="true"></i></i> Download CV</span></a>
       </div>
 
       <div class="contact">
@@ -31,19 +32,16 @@
         <ul>
           <li>
             <span class="icon"><i class="fa fa-phone-square" aria-hidden="true"></i></span>
-            <span class="text">+48 518 076 603</span>
+            <a href="tel:518 076 603"span class="text">+48 518 076 603</span></a>
           </li>
           <li>
             <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-            <span class="text">kontakt.kowalskiw@gmail.com</span>
+            <a href="mailto:kontakt.kowalskiw@gmail.com"span class="text">kontakt.kowalskiw@gmail.com</span></a>
           </li>
-          <li>
-            <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
-            <span class="text">www.wojciech.pl</span>
-          </li>
+
           <li>
             <span class="icon"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
-            <span class="text">linkedin.pl</span>
+            <a href="https://www.linkedin.com/in/kowalskiwojciech/" target="_blank" span class="text">Wojciech Kowalski</span></a>
           </li>
           <li>
             <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
@@ -196,6 +194,7 @@
 <script>
   const langEl = document.querySelector('.langWrap');
   const link = document.querySelectorAll('a');
+  const downloadEl = document.querySelector('.download');
   const titleContactEl = document.querySelector('.titleContact');
   const titleEducationEl = document.querySelector('.titleEducation');
   const titleLanguageEl = document.querySelector('.titleLanguage');
@@ -234,6 +233,7 @@
 
       const attr = el.getAttribute('language');
 
+      downloadEl.innerHTML = data[attr].download;
       titleContactEl.innerHTML = data[attr].titleContact;
       titleEducationEl.innerHTML = data[attr].titleEducation;
       titleLanguageEl.innerHTML = data[attr].titleLanguage;
@@ -269,6 +269,7 @@
   var data = {
       "english": 
       {
+        "download": '<i class="fa fa-download" aria-hidden="true"></i></i> Download CV',
         "titleContact": "CONTACT",
         "titleEducation": "EDUCATION",
         "titleLanguage": "LANGUAGES",
@@ -301,6 +302,7 @@
       },
       "polish": 
       {
+        "download": '<i class="fa fa-download" aria-hidden="true"></i></i> Pobierz CV',
         "titleContact": "KONTAKT",
         "titleEducation": "EDUKACJA",
         "titleLanguage": "JĘZYKI",
