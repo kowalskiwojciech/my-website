@@ -18,10 +18,25 @@ p {
   color: white;
 }
 
+.langWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  height: 55px;
+  a {
+    display: flex;
+    .flag {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
 .container {
   margin: auto;
-  margin-top: 50px;
   display: grid;
+  // grid-template-rows: 1fr;
   width: 100%;
   max-width: 1062px;
   min-height: 1000px;
@@ -30,14 +45,6 @@ p {
   -webkit-box-shadow: 0px 0px 100px -64px rgba(134, 143, 241, 1);
   -moz-box-shadow: 0px 0px 100px -64px rgba(134, 143, 241, 1);
   box-shadow: 0px 0px 100px -64px rgba(134, 143, 241, 1);
-
-  .langWrap {
-    color: rgb(107, 34, 34);
-    .flag {
-      width: 30px;
-      height: 30px;
-    }
-  }
 
   .left_explorer {
     padding: 40px;
